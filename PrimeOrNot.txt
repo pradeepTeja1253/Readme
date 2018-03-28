@@ -1,0 +1,26 @@
+package strings;
+
+import java.util.Scanner;
+
+public class PrimeOrNot {
+	public static void main(String[] args) {
+	
+	boolean prime=true;
+	System.out.println("Enter a Number:");
+	Scanner sc=new Scanner(System.in);
+	Integer num=sc.nextInt();
+	
+	for(int i=2;i<num;i++)
+	{                             //a Number is said to be Prime if it is divisible by 1 and itself.
+	if( num%i==0)
+	{
+		prime=false;
+	}}
+	if(prime==true)
+	{
+		System.out.println("The Entered number is a Prime Number");
+	}
+	else System.out.println("The Entered number is  Not a Prime Number");
+	}
+	}
+
